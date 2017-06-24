@@ -195,6 +195,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 </div>
 <!-- //banner-top -->
+
 <!-- Modal1 -->
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
 			<div class="modal-dialog">
@@ -206,19 +207,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="modal-body modal-body-sub_agile">
 						<div class="col-md-8 modal_body_left modal_body_left1">
 						<h3 class="agileinfo_sign">Inicio <span> sesión</span></h3>
-									<form action="#" method="post">
-							<div class="styled-input agile-styled-input-top">
-								<input type="text" name="Name" required="">
-								<label>Nombre</label>
-								<span></span>
-							</div>
-							<div class="styled-input">
-								<input type="email" name="Email" required=""> 
-								<label>Correo</label>
-								<span></span>
-							</div> 
-							<input type="submit" value="Inicio">
-						</form>
+						
+								<form role="form" name="login" action="php/login.php" method="post">
+								  <div class="form-group">
+									<label for="username">Nombre de usuario o email</label>
+									<input type="text" class="form-control" id="username" name="username" placeholder="Nombre de usuario">
+								  </div>
+								  <div class="form-group">
+									<label for="password">Contrase&ntilde;a</label>
+									<input type="password" class="form-control" id="password" name="password" placeholder="Contrase&ntilde;a">
+								  </div>
+
+								  <button type="submit" class="btn btn-default">Acceder</button>
+								</form>
+	
+		  
+		  
 						  <ul class="social-nav model-3d-0 footer-social w3_agile_social top_agile_third">
 															<li><a href="#" class="facebook">
 																  <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
@@ -258,28 +262,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="modal-body modal-body-sub_agile">
 						<div class="col-md-8 modal_body_left modal_body_left1">
 						<h3 class="agileinfo_sign">Registrarse <span> ahora</span></h3>
-						 <form action="#" method="post">
-							<div class="styled-input agile-styled-input-top">
-								<input type="text" name="Name" required="">
-								<label>Nombre</label>
-								<span></span>
-							</div>
-							<div class="styled-input">
-								<input type="email" name="Email" required=""> 
-								<label>Correo</label>
-								<span></span>
-							</div> 
-							<div class="styled-input">
-								<input type="password" name="password" required=""> 
-								<label>Clave</label>
-								<span></span>
-							</div> 
-							<div class="styled-input">
-								<input type="password" name="Confirm Password" required=""> 
-								<label>Confirmar clave</label>
-								<span></span>
-							</div> 
-							<input type="submit" value="Enviar">
+						<form role="form" name="registro" action="php/registro.php" method="post">
+					
+
+					<div class="form-group">
+		    <label for="username">Nombre de usuario</label>
+		    <input type="text" class="form-control" id="username" name="username" placeholder="Nombre de usuario">
+		  </div>
+		  <div class="form-group">
+		    <label for="fullname">Nombre Completo</label>
+		    <input type="text" class="form-control" id="fullname" name="fullname" placeholder="Nombre Completo">
+		  </div>
+		  <div class="form-group">
+		    <label for="email">Correo Electronico</label>
+		    <input type="email" class="form-control" id="email" name="email" placeholder="Correo Electronico">
+		  </div>
+		  <div class="form-group">
+		    <label for="password">Contrase&ntilde;a</label>
+		    <input type="password" class="form-control" id="password" name="password" placeholder="Contrase&ntilde;a">
+		  </div>
+		  <div class="form-group">
+		    <label for="confirm_password">Confirmar Contrase&ntilde;a</label>
+		    <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirmar Contrase&ntilde;a">
+		  </div>
+          <button type="submit" class="btn btn-default">Registrar</button>
+  
+  
 						</form>
 						  <ul class="social-nav model-3d-0 footer-social w3_agile_social top_agile_third">
 															<li><a href="#" class="facebook">
@@ -309,6 +317,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 <!-- //Modal2 -->
+
 
 <!-- /banner_bottom_agile_info -->
 <div class="page-head_agile_info_w3l">
@@ -444,6 +453,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <!-- for bootstrap working -->
 <script type="text/javascript" src="js/bootstrap.js"></script>
+<script src="js/valida_login.js"></script>
+<script src="js/valida_registro.js"></script>
 </body>
 </html>
 
